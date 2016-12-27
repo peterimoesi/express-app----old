@@ -1,0 +1,16 @@
+body {
+	background-color: #e8f9ed;
+}
+.row {
+	position: relative;
+	border: 0px solid black;
+	top: 100px;
+	left: 35%;
+	width: 25%;
+	height: 500px;
+}
+
+.sidebar {
+	float: right;
+	width: 10%;
+}

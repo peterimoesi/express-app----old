@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax + Infinite scroll</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/ajax/ajax.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		
+	</header>
+	<form id = "form">
+		<div class = "form-group col-md-6">
+			<input type="text" name="search" id = "search_box" class="well">
+		</div>
+		<div id = "underInput"></div>
+
+		<button type = "button" class="btn btn-primary btn-lg" id = "srch">Search</button>
+		<a href="movies.html"><button type = "button" class="btn btn-primary btn-lg">All movies</button></a>
+	</form>
+	<img src="">
+
+	<section id = "sect">
+		
+	</section>
+		<script id = "ajaxx" type="text/template">
+			{{#Search}}
+			<div class = "searchlist">
+
+				<img src= {{Poster}} />
+				<h3>{{Title}}</h3> <h5>{{Year}}</h5>
+				<p>{{}}</p>
+
+			</div>
+			{{/Search}}
+		</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+  <script type="text/javascript" src = "/javascripts/ajax/ajax.js"></script>
+</body>
+</html>

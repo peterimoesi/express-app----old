@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/register.css">
+
+
+        
+    </head>
+    <body>
+
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 register-form">
+
+                <form id = "form_one">
+                      <div class="form-group">
+                        <label for="exampleInputName2">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name = "email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputEmail2">Confirm Email</label>
+                        <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Confirm your email" name = "email2">          
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name = "password">
+                      </div>
+
+                     <div class="form-group">
+                        <label for="exampleInputPassword2">Confirm Password</label>
+                        <input type="password" class="form-control" id="password2" placeholder="Confirm Password" name = "password2">
+                      </div>
+
+
+                      <div class="form-group">
+                        <label for="exampleInputFile">Upload a profile picture</label>
+                        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" required>
+                        <small id="fileHelp" class="form-text text-muted">Picture should be less than 10Mb</small>
+                      </div>
+                      <fieldset class="form-group">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" checked>
+                            Select if you want to receive emails and newsletters about updates from us
+                          </label>
+                        </div>
+            
+                      </fieldset>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" required>
+                          Click to accept all terms and conditions
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+          </div>
+        </div>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+    	<script type="text/javascript" src = "/javascripts/register.js"></script>
+        <script type="text/javascript" src = "/javascripts/background.js"></script>
+    	
+    </body>
+</html>

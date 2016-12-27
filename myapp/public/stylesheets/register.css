@@ -1,0 +1,24 @@
+body {
+
+}
+#form_one {
+	position: relative;
+	top: 30px;
+	background: none;
+	border: 0px solid gray;
+	padding: 20px;
+	color: #cccccc;
+}
+.register-form {
+	position: relative;
+	top: 30px;
+
+	
+
+}
+.has-error input {
+	background-color: #ffad99;
+}
+.has-success input {
+	background-color: #b3ffb3;
+}

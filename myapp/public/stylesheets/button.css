@@ -1,0 +1,21 @@
+.btn-outline {
+    background: none;
+    width: 8%;
+   
+    font-size: 20px;
+    padding: 12px 22px;
+    border: 1px solid #F8F8FF;
+    color: #F8F8FF;
+    border-radius: 20%;
+}
+
+.btn-outline:hover, .btn-outline:focus {
+    background: none;
+    border: 2px solid #F8F8FF;
+    color: #F8F8FF;
+}
+.btn-primary.outline:active {
+    background: none;
+    color: #F8F8FF;
+    border: 2px solid #F8F8FF;
+}
