@@ -10,6 +10,7 @@ var register = require('./routes/register');
 var mySites = require('./routes/mysites');
 var ajax = require('./routes/ajax/ajax');
 var snake = require('./routes/snake/snake');
+var vanilla= require('./routes/vanilla');
 
 
 var app = express();
@@ -31,6 +32,7 @@ app.use('/register', register);
 app.use('/mysites', mySites);
 app.use('/ajax', ajax);
 app.use('/snake', snake);
+app.use('/vanillaApp', vanilla);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
