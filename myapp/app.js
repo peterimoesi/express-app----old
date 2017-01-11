@@ -11,6 +11,8 @@ var mySites = require('./routes/mysites');
 var ajax = require('./routes/ajax/ajax');
 var snake = require('./routes/snake/snake');
 var vanilla= require('./routes/vanilla');
+var profile = require('./routes/profile');
+
 
 
 var app = express();
@@ -33,6 +35,7 @@ app.use('/mysites', mySites);
 app.use('/ajax', ajax);
 app.use('/snake', snake);
 app.use('/vanillaApp', vanilla);
+app.use('/profile', profile);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
