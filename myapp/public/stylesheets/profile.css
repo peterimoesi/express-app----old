@@ -1,3 +1,6 @@
+body{
+	width: 100%;
+}
 #usr {
 	width: 10%;
 	float: right;
@@ -6,4 +9,72 @@
 }
 .brand-sticky {
 	width: 18%;
+}
+section {
+	width: 80%;
+	position: relative;
+	left: 10%;
+}
+#about-me-intro {
+	font-size: 20px;
+	font-weight: bold;
+}
+article {
+	width: 60%;
+}
+#about-me-img{
+	border-radius: 50%;
+	max-width: 50%;
+	width: 40%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.about-me-info {
+	position: relative;
+	float: right;
+	right: 25%;
+
+}
+.about-me-info p {
+	margin-left: 4px;
+}
+
+.about-me-info > p, .about-me-info > h4, .about-me-info > h5{
+	color: gray;
+}
+h2 {
+	font-weight: bold;
+}
+#about-me-bio {
+	position: relative;
+	clear: right;
+	left: 9%;
+	top: 15px;
+}
+#slider-container{
+	max-width: 80%;
+	position: relative;
+	width: 50%;
+	clear: left;
+	top: 50px;
+	left: 40%;
+}
+.pics {
+	width: 10%;
+	padding: 5px;
+}
+#slider {
+	position: relative;
+	top: 10px;
+	left: -30%;
+}
+#ugly {
+	position: relative;
+	top: 200px;
+	left: 35%;
+	width: 50%;
+	font-weight: bold;
+	color: red;
+
 }
