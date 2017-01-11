@@ -1,11 +1,11 @@
 body {
 	overflow: hidden;
+	height: auto;
 }
 #container1 {
 	position: relative;
 	width: 50%;
 	left: 30%;
-	top: 100px;
 	
 }
 
@@ -79,4 +79,8 @@ button {
 	font-size: 30px;
 	top: -100px;
 	left: 33%;
+}
+#usr {
+	width: 10%;
+	float: right;
 }

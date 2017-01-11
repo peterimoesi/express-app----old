@@ -31,12 +31,12 @@ function slide() {
 
 }
 
-setInterval(function() {slide()}, 3000);
+setInterval(function() {slide()}, 1000);
 
 fb.onclick = function(){
 	setTimeout(function (){
 		alert("Hi, it's a joke :) That link would always take you to your fb profile");
 		console.log("Counting")
-	}, 1000);
+	}, 3000);
 }
 
