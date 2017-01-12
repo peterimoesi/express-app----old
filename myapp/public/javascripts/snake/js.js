@@ -11,6 +11,7 @@ var foodie;
 	var c;
 	var d;
 	var snakeLast;
+	var sco = 0;
 
 
 $(document).ready(function(){
@@ -73,8 +74,10 @@ luke = document.querySelector('.lunchie');
 
 		if (foodie[0] == tail[1] && foodie[1] == tail[0]) {
 			luke.innerHTML = '';
-			
+			sco += 20;
 			snake.unshift(snakeLast);
+
+			$('#score').html(sco)
 			food();
 
 		}

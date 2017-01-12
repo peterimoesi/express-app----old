@@ -48,7 +48,7 @@ body {
 	z-index: 1;
 	position: absolute;
 	border: 1px solid gray;
-	top: 150px;
+	top: 15vh;
 	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100&1+0,0.24+52,1+100 */
 background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,0.27) 50%, rgba(32,124,202,0.26) 51%, rgba(34,125,203,0.24) 52%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,0.27) 50%,rgba(32,124,202,0.26) 51%,rgba(34,125,203,0.24) 52%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -56,24 +56,35 @@ background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,0.2
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 ;
 	border-radius: 2%;
-	width: 100%;
-	height: 400px;
-
+	width: 50%;
+	height: 10vh;
+	left: 13%;
 }
 h1 {
 	position: relative;
 	left: 15%;
 	display: inline-table;
-	font-size: 150px;
+	font-size: 5em;
 	color: red;
 }
-button {
+.info button {
 	position: relative;
-	font-size: 30px;
-	top: -100px;
-	left: 33%;
+	font-size: 1em;
+	width: 10vw;
+	top: 1vh;
+	left: -30%;
 }
 #usr {
 	width: 10%;
 	float: right;
+}
+#scoresheet span {
+	font-weight: bold;
+	position: relative;
+	left: 45%;
+	top: 2vh;
+}
+
+#score {
+	font-weight: bold;
 }
