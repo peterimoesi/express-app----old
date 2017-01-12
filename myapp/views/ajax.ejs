@@ -13,12 +13,9 @@
 		<div class = "form-group col-md-6">
 			<input type="text" name="search" id = "search_box" class="well">
 		</div>
-		<div id = "underInput"></div>
-
 		<button type = "button" class="btn btn-primary btn-lg" id = "srch">Search</button>
-		<a href="movies.html"><button type = "button" class="btn btn-primary btn-lg">All movies</button></a>
+		<a href="/"><button type = "button" class="btn btn-primary btn-lg">Home</button></a>
 	</form>
-	<img src="">
 
 	<section id = "sect">
 		
@@ -27,9 +24,9 @@
 			{{#Search}}
 			<div class = "searchlist">
 
-				<img src= {{Poster}} />
-				<h3>{{Title}}</h3> <h5>{{Year}}</h5>
-				<p>{{}}</p>
+				<img src= {{Poster}}, alt = "Sorry, I couldn't find a picture for you :(" />
+				<h3>{{Title}}</h3> <h5>{{Year}}</h5> 
+				<br>
 
 			</div>
 			{{/Search}}
@@ -38,6 +35,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
-  <script type="text/javascript" src = "/javascripts/ajax/ajax.js"></script>
+  <script type="text/javascript" src = "/javascripts/ajax/ajax_refined.js"></script>
 </body>
 </html>

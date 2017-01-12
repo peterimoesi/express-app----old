@@ -5,14 +5,16 @@ header {
 	background: #e8f9ed;
 }
 section {
-	margin-left: 50px; 
-}
-section img {
 	position: relative;
-	display: inline-block;
-	width: 32%;
-	height: 750px;
-	padding: 100px;
+	left: 5%;
+	width: 90%;
+	height: 30px;
+	top: 120px;
+}
+#form {
+	position: relative;
+	height: 100px;
+	top: 50px;
 }
 
 section div {
@@ -24,26 +26,15 @@ section div {
 	position: relative;
 	width: 75%;
 	height: 43px;
-	top: 130px;
 	left: 60%;
 }
 button {
 	position: relative;
-	top: 200px;
+	top: 70px;
 	left: -9.5%;
 	width: 7%;
 }
-#next {
-	position: relative;
-	left: 30%;
-}
+
 a {
 	text-decoration: none;
-}
-#txt_box {
-	position: relative;
-	font-weight: bold;
-	top: 120px;
-	left: -149px;
-	font-size: 20px;
 }

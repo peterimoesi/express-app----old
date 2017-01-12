@@ -79,13 +79,13 @@ function yHandler () {
 
 	function results() {
 		$('header').css('height', '70px');
-		$('header').append($('#form'));
+		$('header').html($('#form'));
 		$('#form').css({
 			"width": "30%",
 			"position": "relative",
 			"top": "-115px",
 			"height": "10px",
-			"display": "inline-flex"
+			"display": "inline",
 		})
 	}
 
@@ -99,10 +99,12 @@ function yHandler () {
 	     refinedJsondata = JSON.parse(rawJsondata);	
 
 	     if(refinedJsondata.Response == "False") {
-	     	$('section').empty();
-			$('section').append('<div id = "txt_box">No movie was found</div')
-			//console.log(refinedJsondata.Response)
+
+	     	results();
+			$('section').html('<div id = "txt_box">No movie was found</div')
+			
 	     }
+
 	    } 
 	  };
 	  xhttp.open("GET", url, true);
@@ -112,15 +114,15 @@ function yHandler () {
 
 //add ajax results to page
 	function appendResults() {
+		results();
 		url = 'http://www.omdbapi.com/?s=' + document.querySelector('#search_box').value +'&type=movie&r=json&page=' + xx;
 		loadDoc(url);
-		$('title').empty();
-			$('title').append(search.value);
+		
+			$('title').html(search.value);
 
-			$('section').empty();
+			//$('section').empty();
 			
-			console.log(rawJsondata);
-		/*	for(var i in refinedJsondata.Search){
+			for(var i in refinedJsondata.Search){
 				movie = refinedJsondata.Search[i];
 
 				
@@ -132,24 +134,21 @@ function yHandler () {
 				$('section').append('<div class="mov"></div>');
 				$('section').append('<img class="img-rounded" src ='+ movie.Poster + ' alt = "Image not available">');
 				$('section').append('<div class = "movie_info">' + movie.Title + ' (' + movie.Year + ')' + '</div>')
-			}*/
+			}
 
-			mustAche = function (data) {
+		/*	mustAche = function (data) {
 					var template = $('#ajaxx').html();
 					var html = Mustache.to_html(template, data);
-					//console.log(html);
-					//console.log(template);
 					$('section').html(html);
 				}
-			mustAche(refinedJsondata);
-	
+			mustAche(refinedJsondata);*/
+			
 	}
 	
 
-	$('#srch').click(function(){	
-		results();
+	$('#srch').on('click', function(){
 		appendResults();
-		console.log("Peter");
+		
 	})
 
 /*	function yHandler () {
