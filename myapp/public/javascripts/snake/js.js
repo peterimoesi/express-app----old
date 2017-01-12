@@ -1,5 +1,5 @@
 
-var hght = 800/40;
+var hght = 500/400;
 var xx = 0;
 var yy = 0;
 var dir = "right";
@@ -28,10 +28,10 @@ function grrd (n) {
 }
 grrd(40);
 
-	$('.rows').css('height', hght + 'px');
+	$('.rows').css('height', hght + 'vh');
 
 	
-	$('.cols').css('height', hght + 'px');
+	$('.cols').css('height', hght + 'vh');
 //	$('.gird').append('<div id = "me"></div>');
 
 	//$('.gird').append('<div id = "lunch"></div>');
@@ -43,13 +43,13 @@ luke = document.querySelector('.lunchie');
 
 				foodie = [];
 				
-				a = Math.floor((Math.random() * 28) + 5);
-				b = Math.floor((Math.random() * 28) + 5);
+				a = Math.floor((Math.random() * 22) + 2);
+				b = Math.floor((Math.random() * 30) + 5);
 
 				foodie.push(a);
 				foodie.push(b);
 
-			$('.lunchie').append('<div class = "lunch" style = "top:' + foodie[0] * STEP + 'px; left:' + foodie[1] * STEP + 'px"></div>');
+			$('.lunchie').append('<div class = "lunch" style = "top:' + foodie[0] * 2 + 'vh; left:' + foodie[1] * 2 + '%"></div>');
 
 			c = foodie[0];
 			d = foodie[1];
@@ -63,7 +63,7 @@ luke = document.querySelector('.lunchie');
 		cont.innerHTML = '';
 		snake.forEach(function (piece) {
 
-			cont.innerHTML += '<div class="snake-piece" style = "top:' + piece[1] * STEP+ 'px; left:' + piece[0] * STEP + 'px"></div>'; 
+			cont.innerHTML += '<div class="snake-piece" style = "top:' + piece[1] * 2 + 'vh; left:' + piece[0] * 2 + '%"></div>'; 
 		})
 
 
@@ -97,7 +97,7 @@ luke = document.querySelector('.lunchie');
 
 	function endGame() {
 
-		if ((tail[0] === 33 || tail[1] === 33) || (tail[0] === 1 || tail[1] === 1)) {
+		if ((tail[0] === 39 || tail[1] === 24) || (tail[0] === 1 || tail[1] === 1)) {
 			clearInterval(stop);
 			$('.info').show();
 		}

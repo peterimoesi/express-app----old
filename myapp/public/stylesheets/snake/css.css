@@ -10,24 +10,17 @@ body {
 }
 
 .gird {
-	position: relative;
-	width: 800px;
-	height: 800px;
-	border: 2px solid black;
+
 }
 .rows {
-
 	border: 1px solid white;
-	background-color: gray;
-	width: 100%;
-	box-sizing: border-box;
-	
 }
+
 .cols {
-	width: 2.5%;
-	display: inline-flex;
+	width: 1vw;
+	display: inline-table;
+	background-color: gray;
 	border: 1px solid white;
-	box-sizing: border-box;
 }
 
 .snake-piece {
