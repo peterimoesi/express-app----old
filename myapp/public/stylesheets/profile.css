@@ -11,29 +11,30 @@ body{
 	width: 18%;
 }
 section {
-	width: 80%;
+	width: 80vw;
 	position: relative;
-	left: 10%;
+	left: 10vw;
 }
 #about-me-intro {
 	font-size: 20px;
 	font-weight: bold;
 }
 article {
-	width: 60%;
+	width: 60vw;
 }
 #about-me-img{
 	border-radius: 50%;
-	max-width: 50%;
-	width: 40%;
+	max-width: 40%;
+	width: 35vw;
 	height: auto;
 	float: left;
 	position: relative;
 }
 .about-me-info {
 	position: relative;
-	float: right;
-	right: 25%;
+	clear: right;
+	top: 20px;
+	left: 9%;
 
 }
 .about-me-info p {
@@ -57,8 +58,8 @@ h2 {
 	position: relative;
 	width: 50%;
 	clear: left;
-	top: 50px;
-	left: 40%;
+	top: -4vh;
+	left: 45vw;
 }
 .pics {
 	width: 10%;
@@ -71,9 +72,9 @@ h2 {
 }
 #ugly {
 	position: relative;
-	top: 200px;
+	top: 3vh;
 	left: 35%;
-	width: 50%;
+	width: 50vw;
 	font-weight: bold;
 	color: red;
 
