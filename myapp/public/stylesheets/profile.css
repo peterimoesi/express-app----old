@@ -53,12 +53,18 @@ h2 {
 	left: 9%;
 	top: 15px;
 }
+#about-me-bio p {
+	width: 45vw;
+	position: relative;
+	clear: right;;
+	top: auto;
+}
 #slider-container{
 	max-width: 80%;
 	position: relative;
 	width: 50%;
 	clear: left;
-	top: -4vh;
+	top: 0vh;
 	left: 45vw;
 }
 .pics {
