@@ -71,8 +71,8 @@ h1 {
 	position: relative;
 	font-size: 1em;
 	width: 10vw;
-	top: 1vh;
-	left: -30%;
+	top: 5vh;
+	left: -8vw;
 }
 #usr {
 	width: 10%;
@@ -87,4 +87,11 @@ h1 {
 
 #score {
 	font-weight: bold;
+}
+@media screen and (max-width: 1440px) {
+
+    .info button {
+        left: 24%;
+        color: red;
+    }
 }

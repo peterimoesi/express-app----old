@@ -85,7 +85,7 @@ function yHandler () {
 			"position": "relative",
 			"top": "-115px",
 			"height": "10px",
-			"display": "inline"
+			"display": "inline-flex"
 		})
 	}
 
@@ -137,8 +137,8 @@ function yHandler () {
 			mustAche = function (data) {
 					var template = $('#ajaxx').html();
 					var html = Mustache.to_html(template, data);
-					console.log(html);
-					console.log(template);
+					//console.log(html);
+					//console.log(template);
 					$('section').html(html);
 				}
 			mustAche(refinedJsondata);
@@ -149,7 +149,7 @@ function yHandler () {
 	$('#srch').click(function(){	
 		results();
 		appendResults();
-		//console.log(data);
+		console.log("Peter");
 	})
 
 /*	function yHandler () {
