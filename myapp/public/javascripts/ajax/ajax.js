@@ -124,8 +124,6 @@ function yHandler () {
 			
 			for(var i in refinedJsondata.Search){
 				movie = refinedJsondata.Search[i];
-
-				
 				;
 
 				if(movie.Poster == "N/A") {
@@ -136,12 +134,12 @@ function yHandler () {
 				$('section').append('<div class = "movie_info">' + movie.Title + ' (' + movie.Year + ')' + '</div>')
 			}
 
-		/*	mustAche = function (data) {
+			mustAche = function (data) {
 					var template = $('#ajaxx').html();
 					var html = Mustache.to_html(template, data);
 					$('section').html(html);
 				}
-			mustAche(refinedJsondata);*/
+			mustAche(refinedJsondata);
 			
 	}
 	
