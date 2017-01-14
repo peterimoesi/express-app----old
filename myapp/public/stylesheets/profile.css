@@ -85,3 +85,13 @@ h2 {
 	color: red;
 
 }
+#prof-links {
+	position: absolute;
+	float: right;
+	left: 50vw;
+	top: 12vh;
+}
+#codewars-img {
+	margin-top: 10px;
+	width: 19vw;
+}

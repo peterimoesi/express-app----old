@@ -4,6 +4,8 @@ $(document).ready(function(){
         $(this).effect( "bounce", { times : 3 }, "slow");
     });
 
-
+	$('#codewars').click(function(){
+		$(this).load("https://www.codewars.com/users/peterimoesi");
+	})
     
 });
