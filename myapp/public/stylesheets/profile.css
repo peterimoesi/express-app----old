@@ -104,9 +104,20 @@ h2 {
 	position: absolute;
 	top: 35vh;
 	left: 55vw;
+	width: 13vw;
 	border-radius: 5%;
 	background: none;
 	box-shadow: none;
+}
+#h3-a h3 {
+	margin-right: 10px;
+	margin-left: -45px;
+}
+#h3-a img {
+	margin-bottom: 10px;
+}
+#h3-a .h3-child {
+	display: inline-block;
 }
 
 @media screen and (max-width: 1440px) {
