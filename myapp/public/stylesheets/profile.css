@@ -50,11 +50,11 @@ h2 {
 #about-me-bio {
 	position: relative;
 	clear: right;
+	width: 45vw;
 	left: 9%;
 	top: 15px;
 }
 #about-me-bio p {
-	width: 45vw;
 	position: relative;
 	clear: right;;
 	top: auto;
@@ -85,15 +85,28 @@ h2 {
 	color: red;
 
 }
-#prof-links {
+.prof-links {
 	position: absolute;
-	float: right;
-	left: 55vw;
 	top: 12vh;
+	left: 55vw;
 }
 #codewars-img {
+	position: relative;
+	top: 15vh;
 	margin-top: 10px;
 	width: 19vw;
+}
+#linkedin-link {
+	position: relative;
+}
+
+#h3-a {
+	position: absolute;
+	top: 35vh;
+	left: 55vw;
+	border-radius: 5%;
+	background: none;
+	box-shadow: none;
 }
 
 @media screen and (max-width: 1440px) {
