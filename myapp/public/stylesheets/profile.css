@@ -64,7 +64,7 @@ h2 {
 	position: relative;
 	width: 50%;
 	clear: left;
-	top: 0vh;
+	top: -2vh;
 	left: 45vw;
 }
 .pics {
@@ -78,9 +78,9 @@ h2 {
 }
 #ugly {
 	position: relative;
-	top: 3vh;
-	left: 35%;
-	width: 50vw;
+	top: 5vh;
+	left: 38vw;
+	width: 40vw;
 	font-weight: bold;
 	color: red;
 
@@ -88,10 +88,28 @@ h2 {
 #prof-links {
 	position: absolute;
 	float: right;
-	left: 50vw;
+	left: 55vw;
 	top: 12vh;
 }
 #codewars-img {
 	margin-top: 10px;
 	width: 19vw;
+}
+
+@media screen and (max-width: 1440px) {
+
+    #ugly {
+	top: 10vh;
+	left: 35vw;
+	width: 40vw;
+	}
+	#prof-links {
+	position: absolute;
+	float: right;
+	left: 55vw;
+	top: 14vh;
+	}
+	#slider-container{
+	top: 4vh;
+	}
 }
