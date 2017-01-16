@@ -18,6 +18,7 @@ section {
 #about-me-intro {
 	font-size: 20px;
 	font-weight: bold;
+	z-index: 3;
 }
 article {
 	width: 60vw;
@@ -35,6 +36,7 @@ article {
 	clear: right;
 	top: 20px;
 	left: 9%;
+	z-index: 3;
 
 }
 .about-me-info p {
@@ -53,11 +55,13 @@ h2 {
 	width: 45vw;
 	left: 9%;
 	top: 15px;
+	z-index: 3;
 }
 #about-me-bio p {
 	position: relative;
 	clear: right;;
 	top: auto;
+	z-index: 3;
 }
 #slider-container{
 	max-width: 80%;
@@ -66,6 +70,7 @@ h2 {
 	clear: left;
 	top: -8vh;
 	left: 45vw;
+	z-index: 3;
 }
 .pics {
 	width: 10%;
@@ -122,7 +127,8 @@ h2 {
 #my-obj{
 	position: fixed;
 	top: 20vh;
-	left: 15vw;
+	left: 10vw;
+	z-index: 4;
 }
 #clickOff {
 	position: relative;
