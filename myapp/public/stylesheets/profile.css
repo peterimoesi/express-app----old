@@ -130,6 +130,10 @@ h2 {
 	left: 7vw;
 	z-index: 4;
 }
+#closeup {
+	position: relative;
+	clear: left;
+}
 #clickOff {
 	position: relative;
 }
