@@ -132,7 +132,7 @@ h2 {
 }
 #closeup {
 	position: relative;
-	clear: left;
+	float: left;
 }
 #clickOff {
 	position: relative;
