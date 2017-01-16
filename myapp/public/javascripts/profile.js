@@ -10,6 +10,9 @@ $(document).ready(function(){
         document.getElementById('my-obj').close();
         console.log("closed"); 
     };
+	$('body').on('click', function(){
+	  	document.getElementById('my-obj').close();
+	  });
 
 	$('#codewars').click(function(){
 		$(this).load("https://www.codewars.com/users/peterimoesi");
