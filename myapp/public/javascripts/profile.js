@@ -3,7 +3,7 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).effect( "bounce", { times : 3 }, "slow");
 	    var dialog = document.getElementById('my-obj');  
-        	dialog.show();
+        	setTimeOut(function(){dialog.show()}, 2000);
        	 console.log("showing")    
     });
 	document.getElementById('clickOff').onclick = function() {  
