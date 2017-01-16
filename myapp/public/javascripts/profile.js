@@ -7,7 +7,7 @@ $(document).ready(function(){
        	 console.log("showing")    
     });
 	document.getElementById('clickOff').onclick = function() {  
-        dialog.close();
+        document.getElementById('my-obj').close();
         console.log("closed"); 
     };
 
