@@ -133,8 +133,11 @@ h2 {
 #closeup {
 	position: relative;
 	float: left;
-	left: -20vw;
-	font-weight: bold
+	top: 10vh;
+	left: -18vw;
+	font-weight: bold;
+	color: red;
+	
 }
 #clickOff {
 	position: relative;
