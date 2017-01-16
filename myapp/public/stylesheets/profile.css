@@ -119,6 +119,14 @@ h2 {
 #h3-a .h3-child {
 	display: inline-block;
 }
+#my-obj{
+	position: fixed;
+	top: 35vh;
+	left: 30vw;
+}
+#clickOff {
+	position: relative;
+}
 
 @media screen and (max-width: 1440px) {
 
