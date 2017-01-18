@@ -34,6 +34,12 @@
 		position: relative;
 		left: -2%;
 	}
+	@-moz-document url-prefix() { 
+	  #my-obj{
+	  	position: fixed;
+	    left: 55%; 
+	  }
+	}
 
 	#slider-container {
 		width: 50%;

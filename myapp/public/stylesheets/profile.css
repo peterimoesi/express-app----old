@@ -114,11 +114,20 @@ h2 {
 	display: inline-block;
 }
 #my-obj{
+	display: none;
 	position: fixed;
 	top: 20vh;
 	left: 7vw;
 	z-index: 4;
 }
+@-moz-document url-prefix() { 
+  #my-obj{
+    left: 35%;
+    border: 2px solid black;
+    background-color: white; 
+  }
+}
+
 #closeup {
 	position: relative;
 	font-weight: bold;
