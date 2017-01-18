@@ -1,5 +1,8 @@
 $(document).ready(function(){
-	$('#about-me-img').on('click', function (e) {
+	
+
+	if($('#about-me-bio').css('display') !== 'none') {
+		$('#about-me-img').on('click', function (e) {
         e.preventDefault();
         $(this).effect( "bounce", { times : 3 }, "slow");
 	    var dialog = document.getElementById('my-obj');  
@@ -17,5 +20,6 @@ $(document).ready(function(){
 	$('#codewars').click(function(){
 		$(this).load("https://www.codewars.com/users/peterimoesi");
 	});
-    
+	}
+    console.log($('#about-me-bio').css('display') == 'none')
 });
