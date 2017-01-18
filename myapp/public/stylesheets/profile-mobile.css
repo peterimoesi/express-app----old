@@ -8,7 +8,7 @@
 		width: 100vw;
 	}
 
-	#about-me-bio, .nav-left, .sidebar, .navbar-left, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt{
+	#about-me-bio, .nav-left, .sidebar, .navbar-left, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
 		display: none;
 	}
 	#about-me-intro {
@@ -23,13 +23,6 @@
 		top: 7vh;
 		left: 25vw;
 		position: absolute;
-	}
-
-	#closeup {
-		top: 6vh;
-		font-size: 10px;
-		left: 27vw;
-		color: black;
 	}
 
 	.about-me-info {
@@ -67,7 +60,7 @@
 	}
 	#mob-links {
 		position: relative;
-		top: 24vh;
+		top: 34vh;
 		left: 18vw;
 	}
 	#find-me {
