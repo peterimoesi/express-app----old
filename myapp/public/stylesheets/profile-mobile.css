@@ -1,87 +1,3 @@
-@media screen and (max-width: 440px) {
-	body {
-		width: 100vw;
-		overflow: hidden;
-		height: 100vh;
-	}
-	nav {
-		width: 100vw;
-	}
-
-	#about-me-bio, .nav-left, .sidebar, .navbar-left, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
-		display: none;
-	}
-	#about-me-intro {
-		position: relative;
-		left: 33vw;
-	}
-
-	#about-me-img{
-		border-radius: 50%;
-		width: 50%;
-		max-width: none;
-		height: auto;
-		top: 5vh;
-		left: 21vw;
-		position: absolute;
-	}
-
-	.about-me-info {
-		top: 20vh;
-		color: #4d4d4d;
-		left: 22.5vw;
-	}
-	.about-me-info h5 {
-		position: relative;
-		left: -7%;
-	}
-
-	#slider-container {
-		width: 100vw;
-		top: 20vh;
-		left: 40vw;
-		
-	}
-	#slider-container h2 {
-		color: #a6a6a6;
-	}
-	#slider-container h2 {
-		left: 0%;
-	}
-	.pics {
-		width: 12%;
-		padding: 5px;
-	}
-	.mob-icons {
-		display: inline;
-		
-	}
-	.mob-icons img {
-		width: 28%;
-	}
-	#fb-icon {
-		width: 6%;
-	}
-	#mob-links {
-		position: relative;
-		top: 29vh;
-		left: 18vw;
-	}
-	#find-me {
-		margin-right: 15px; 
-	}
- 
-	section {
-		width: 100vw;
-		left: 4vw;
-	}
-
-	article {
-		width: 95%;
-	}
-
-
-}
 @media screen and (max-width: 769px) {
 
 	#about-me-img{
@@ -149,5 +65,88 @@
 	#my-obj{
 		left: 0vw;
 	}
+
+}
+@media screen and (max-width: 440px) {
+	body {
+		width: 100vw;
+		overflow: hidden;
+		height: 100vh;
+	}
+	nav {
+		width: 100vw;
+	}
+
+	#about-me-bio, .nav-left, .sidebar, .navbar-left, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
+		display: none;
+	}
+	#about-me-intro {
+		position: relative;
+		left: 33vw;
+	}
+
+	#about-me-img{
+		border-radius: 50%;
+		width: 40vw;
+		height: auto;
+		top: 7vh;
+		left: 25vw;
+		position: absolute;
+	}
+
+	.about-me-info {
+		top: 20vh;
+		color: #4d4d4d;
+		left: 22.5vw;
+	}
+	.about-me-info h5 {
+		position: relative;
+		left: -7%;
+	}
+
+	#slider-container {
+		width: 100vw;
+		top: 20vh;
+		left: 40vw;
+		
+	}
+	#slider-container h2 {
+		color: #a6a6a6;
+	}
+	#slider-container h2 {
+		left: 0%;
+	}
+	.pics {
+		width: 12%;
+		padding: 5px;
+	}
+	.mob-icons {
+		display: inline;
+		
+	}
+	.mob-icons img {
+		width: 28%;
+	}
+	#fb-icon {
+		width: 6%;
+	}
+	#mob-links {
+		position: relative;
+		top: 29vh;
+		left: 18vw;
+	}
+	#find-me {
+		margin-right: 15px; 
+	}
+ 
+	section {
+		width: 100vw;
+		left: 4vw;
+	}
+
+	article {
+		width: 95%;
+	}
+
 
 }
