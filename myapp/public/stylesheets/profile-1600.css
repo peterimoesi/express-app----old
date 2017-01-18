@@ -1,0 +1,31 @@
+@media screen and (max-width: 1582px) {
+
+    #ugly {
+	top: 14vh;
+	left: 35vw;
+	width: 40vw;
+	font-weight: bold;
+	}
+	#prof-links {
+	position: absolute;
+	float: right;
+	left: 55vw;
+	top: 14vh;
+	}
+	.pics {
+	width: 10%;
+	padding: 5px;
+	}
+	#slider-container{
+	top: 8vh;
+	max-width: 80%;
+	width: 50%;
+	clear: left;
+	left: 45vw;
+	z-index: 3;
+	}
+	#closeup {
+		top: 30vh;
+		left: -17vw;
+	}
+}

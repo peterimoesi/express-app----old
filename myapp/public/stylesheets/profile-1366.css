@@ -1,0 +1,101 @@
+@media screen and (max-width: 1366px) {
+	body {
+		width: 100vw;
+		overflow: hidden;
+		height: 100%;
+	}
+	nav {
+		width: 100vw;
+	}
+
+	#about-me-bio, .sidebar, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
+		display: none;
+	}
+	#about-me-intro {
+		position: relative;
+		left: 40%;
+	}
+
+	#about-me-img{
+		border-radius: 50%;
+		max-width: 30%;
+		height: auto;
+		top: 7vh;
+		left: 29%;
+		position: absolute;
+	}
+
+	.about-me-info {
+		top: 40vh;
+		color: #4d4d4d;
+		left: 38.5%;
+	}
+	.about-me-info h5 {
+		position: relative;
+		left: -2%;
+	}
+
+	#slider-container {
+		width: 50%;
+		top: 40vh;
+		left: 40vw;
+		
+	}
+	#slider-container h2 {
+		position: relative;
+		color: #a6a6a6;
+		left: 8.5%;
+	}
+	.pics {
+		width: 12%;
+		padding: 5px;
+	}
+	.mob-icons {
+		display: inline;
+		
+	}
+	.mob-icons img {
+		width: 10%;
+	}
+	#fb-icon {
+		width: 3%;
+	}
+	#mob-links {
+		position: relative;
+		top: 45vh;
+		left: 38%;
+	}
+	#find-me {
+		margin-right: 15px; 
+	}
+	#my-obj{
+	position: fixed;
+	top: 15vh;
+	left: 7vw;
+	z-index: 4;
+}
+ 
+	section {
+		width: 100vw;
+		left: 4vw;
+	}
+
+	article {
+		width: 95%;
+	}
+
+
+    #ugly {
+	top: 10vh;
+	left: 35vw;
+	width: 40vw;
+	font-weight: bold;
+	}
+	#prof-links {
+	position: absolute;
+	float: right;
+	left: 55vw;
+	top: 14vh;
+	}
+
+}

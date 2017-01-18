@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 
-	if($('#about-me-bio').css('display') !== 'none') {
+	if($('.nav-left').css('display') !== 'none') {
 		$('#about-me-img').on('click', function (e) {
         e.preventDefault();
         $(this).effect( "bounce", { times : 3 }, "slow");
