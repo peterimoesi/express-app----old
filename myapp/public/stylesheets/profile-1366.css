@@ -26,7 +26,7 @@
 	}
 
 	.about-me-info {
-		top: 40vh;
+		top: 43vh;
 		color: #4d4d4d;
 		left: 38.5%;
 	}
@@ -34,16 +34,10 @@
 		position: relative;
 		left: -2%;
 	}
-	@-moz-document url-prefix() { 
-	  #my-obj{
-	  	position: fixed;
-	    left: 55%; 
-	  }
-	}
 
 	#slider-container {
 		width: 50%;
-		top: 40vh;
+		top: 44vh;
 		left: 40vw;
 		
 	}

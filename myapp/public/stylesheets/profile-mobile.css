@@ -151,3 +151,12 @@
 
 
 }
+@media screen and (max-width: 321px) {
+
+	#mob-links {
+	top: 25vh;
+	margin-right: 15px; 
+	}
+
+
+}
