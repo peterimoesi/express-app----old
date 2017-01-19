@@ -1,8 +1,8 @@
 @media screen and (max-width: 1366px) {
 	body {
 		width: 100vw;
-		overflow: hidden;
 		height: 100%;
+		overflow-x: hidden;
 	}
 	nav {
 		width: 100vw;
@@ -18,15 +18,15 @@
 
 	#about-me-img{
 		border-radius: 50%;
-		max-width: 30%;
+		max-width: 18%;
 		height: auto;
 		top: 7vh;
-		left: 29%;
+		left: 34.7%;
 		position: absolute;
 	}
 
 	.about-me-info {
-		top: 43vh;
+		top: 32vh;
 		color: #4d4d4d;
 		left: 38.5%;
 	}
@@ -37,7 +37,7 @@
 
 	#slider-container {
 		width: 50%;
-		top: 44vh;
+		top: 34.5vh;
 		left: 40vw;
 		
 	}
@@ -56,13 +56,14 @@
 	}
 	.mob-icons img {
 		width: 10%;
+		margin-left: 7px;
 	}
 	#fb-icon {
 		width: 3%;
 	}
 	#mob-links {
 		position: relative;
-		top: 45vh;
+		top: 42vh;
 		left: 38%;
 	}
 	#find-me {
@@ -70,9 +71,20 @@
 	}
 	#my-obj{
 	position: fixed;
-	top: 15vh;
+	padding: 5px;
+	top: 10vh;
 	left: 7vw;
 	z-index: 4;
+	border: 2px solid black;
+    background-color: white; 
+}
+@-moz-document url-prefix() { 
+  #my-obj{
+    left: 30%;
+    top: 10vh;
+    
+  }
+
 }
  
 	section {
