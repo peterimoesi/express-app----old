@@ -4,6 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var jsonfile = require('jsonfile');
+var fs = require('fs');
+var fileName = 'C:/sites/myserver/myapp/public/json/json.json';
+
+
 
 var sticky = require('./routes/sticky');
 var register = require('./routes/register');
@@ -12,7 +17,7 @@ var ajax = require('./routes/ajax/ajax');
 var snake = require('./routes/snake/snake');
 var vanilla= require('./routes/vanilla');
 var profile = require('./routes/profile');
-
+var eventreg = require('./routes/eventreg/eventreg');
 
 
 var app = express();
@@ -36,6 +41,27 @@ app.use('/ajax', ajax);
 app.use('/snake', snake);
 app.use('/vanillaApp', vanilla);
 app.use('/profile', profile);
+app.use('/eventreg', eventreg);
+
+
+
+app.post('/', function(req, res, next) {
+
+  var configFile = fs.readFileSync(fileName);
+  console.log(configFile);
+  var config = JSON.parse(configFile);
+  config.push(JSON.stringify(req.body));
+  var configJSON = JSON.stringify(config);
+
+  fs.writeFileSync(fileName, configJSON);
+
+  var newFile = fs.readFileSync(fileName);
+  console.log(JSON.parse(newFile));
+
+ res.end(JSON.stringify(req.body));
+
+
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -43,6 +69,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -54,5 +81,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 
 module.exports = app;

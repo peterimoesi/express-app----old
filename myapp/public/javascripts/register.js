@@ -33,6 +33,13 @@ $(function () {
 				required: true,
 				equalTo: "#exampleInputEmail1"
 			},
+			firstname: {
+				required: true
+			},
+			lastname: {
+				required: true
+			},
+
 			password: {
 				required: true,
 				strongPassword: true

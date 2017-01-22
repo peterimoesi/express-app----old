@@ -42,7 +42,7 @@ url = 'http://www.omdbapi.com/?s=' + searchValue.value +'&type=movie&r=json&page
 	    if(this.readyState == 4 && this.status == 200) {	
 	     rawJsondata = this.responseText;
 	     refinedJsondata = JSON.parse(rawJsondata);	
-	     console.log(refinedJsondata);
+	     console.log(rawJsondata);
 
 	     
 	     if(refinedJsondata.Response == "False") {

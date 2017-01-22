@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Event App</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/eventreg/eventreg.css">
+	</head>
+
+	<body class = "container-fluid" style="color: white">
+
+		<header class = "container-fluid" style="border-bottom: 30px solid #e9be60">
+			<img class = "img-circle center-block" src="http://www.residenceorientation.com/uploads/4/3/9/7/4397425/2336453.jpg?793">
+		</header>
+
+		<div class = "container" id = "nextEvent">
+		<br>
+
+			<p>Click the button to register for the next event</p>
+			<button type="button" class="btn btn-warning"><a href="#register" style="text-decoration: none; color: white">Register</a></button>
+		</div>
+
+		<div class = "container futEvents">
+			<div class = "row">
+				<div class = "col-lg-8 col-md-12 col-xs-12">
+				<br>
+				<p>Future events</p>
+					<div class = "row">
+						<div class = "col-lg-6 col-md-12 col-xs-12" style="border: 10px solid black">
+							<a href="#"><img class = "img-thumbnail" src="http://images1.laweekly.com/imager/u/745xauto/6131322/night-bass-by-troy-acevedo.jpg"></a>
+						</div>
+						<div class = "col-lg-6 col-md-12 col-xs-12" style="border: 10px solid black">
+							<a href="#"><img class = "img-thumbnail" src="http://zone1.ibizaspotlightsl.netdna-cdn.com/sites/default/files/styles/embedded_auto_740_width/public/generic-page-images/124837/embedded-1463394512.jpg?itok=-OBpembA"></a>
+						</div>
+						<div class = "col-lg-6 col-md-12 col-xs-12" style="border: 10px solid black">
+							<a href="#"><img class = "img-thumbnail" src="http://www.edmdroid.com/wp-content/uploads/2011/04/lush-club-night-euphoria10.jpg"></a>
+						</div>
+						<div class = "col-lg-6 col-md-12 col-xs-12" style="border: 10px solid black">
+							<a href="#"><img class = "img-thumbnail" src="http://zone1.ibizaspotlightsl.netdna-cdn.com/sites/default/files/styles/embedded_auto_740_width/public/generic-page-images/124837/embedded-1463394512.jpg?itok=-OBpembA"></a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-lg-1 col-md-12 col-xs-12"></div>
+				<div class = "col-lg-3 col-md-12 col-xs-12" style=" background:none; border: 10px solid black">
+						<br>
+						<p style="font-weight: bold; font-size: 17px;">Event Time</p>
+						starts:01.21.2017 22:00
+						Ends:22.01.2017 4:00
+						<br>
+						<br>
+						<br>
+						<p style="font-weight: bold; font-size: 17px;">Event Location</p>
+						<span style = "font-size: 15px;">Capital Club</span>
+						<br>
+						Fredrikinkatu 51 
+						<br>
+						FI-00100 Helsinki
+				</div>
+
+				<div class = "col-lg-1 col-md-12 col-xs-12"></div>
+				<div class = "col-lg-3 col-md-12 col-xs-12">
+					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.270117185627!2d24.931951927046853!3d60.16843862665632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bcb3b75e171%3A0x63f2a8e292b9b989!2sFredrikinkatu+51%2C+00101+Helsinki!5e0!3m2!1sen!2sfi!4v1485095254799" frameborder="0" style="border:2px solid black" allowfullscreen>
+						
+					</iframe>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<div class = "container" id = "register"style="color: white">
+		<br>
+		<br>
+			<h3>Capital Saturday 21.1</h3>
+			<p>21.1.2017 22:00</p>
+			club capital
+			<br>
+			<br>
+			<h4>Fill out the form to register</h4>
+			<br>
+			<br>
+			<form id = "form_one" method="POST" action = "/" target="blank">
+				<p style="font-size: 17px; font-weight: bold">Personal Information</p>
+
+				<div class = "form-group">
+					<label for="firstname">First Name*</label> 
+					<br>
+					<div class = "col-lg-3 col-xs-12">
+						<input type="text" class="form-control" id="firstname" placeholder="First Name" name = "firstname">
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class = "form-group">
+					<label for="lastname">Last Name*</label> 
+					<br>
+					<div class = "col-lg-3 col-xs-12">
+						<input type="text" class="form-control" id="lastname" placeholder="Last Name" name = "lastname">
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class = "form-group">
+					<label for="email">Email*</label> 
+					<br>
+					<div class = "col-lg-3 col-xs-12">
+						<input type="email" class="form-control" id="email" placeholder="email address" name = "email">
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="form-group">
+				  <label for="avecs">Number of Avec:</label>
+				  <br>
+				  <div class = "col-lg-3 col-xs-12">	
+				  	<select class="form-control" id="avecs" name = "avecs">
+				  </div>
+				  </select>
+				</div>
+
+				<div class="form-group">
+      				<div class="offset-sm-2 col-sm-10">
+      				<br>
+       				 <button type="submit" class="btn btn-default" value = "send" id = "submitbutton">Submit</button>
+      				</div>
+    			</div>
+
+			</form>
+		</div>
+
+		 <div class="modal fade" id="myModal" role="dialog" style="color: black">
+		    <div class="modal-dialog modal-sm">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title" >Successful</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>Your registration has been submitted</p>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal" id = "closeModal">Close</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+
+
+
+		<script type="text/javascript">
+			var avecs = document.getElementById('avecs');
+			var options;
+
+			for(var i = 0; i <= 30; i++) {
+				options = document.createElement('option');
+				options.innerHTML = i;
+				avecs.appendChild(options);
+			}
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script typr = "text/javascript" src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src = "/javascripts/eventreg/eventreg.js"></script>
+	</body>
+
+</html>
