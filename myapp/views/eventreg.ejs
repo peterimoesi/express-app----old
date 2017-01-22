@@ -117,15 +117,17 @@
 				<div class="form-group">
 				  <label for="avecs">Number of Avec:</label>
 				  <br>
-				  <div class = "col-lg-3 col-xs-12">	
+				  <div class = "col-lg-3 col-md-6 col-xs-12">	
 				  	<select class="form-control" id="avecs" name = "avecs">
 				  </div>
 				  </select>
 				</div>
-
+				<br>
+				<br>
 				<div class="form-group">
       				<div class="offset-sm-2 col-sm-10">
       				<br>
+
        				 <button type="submit" class="btn btn-default" value = "send" id = "submitbutton">Submit</button>
       				</div>
     			</div>
@@ -158,6 +160,7 @@
 
 			for(var i = 0; i <= 30; i++) {
 				options = document.createElement('option');
+				options.setAttribute('class', 'col-lg-3 col-md-6 col-xs-12')
 				options.innerHTML = i;
 				avecs.appendChild(options);
 			}
