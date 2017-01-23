@@ -2,9 +2,11 @@ var searchValue = document.getElementById('search_box');
 var title = document.getElementsByTagName('title');
 var searchButton = document.getElementById('srch');
 var section = document.getElementById('sect');
+var homeButton = document.getElementById('hme');
 var header = document.querySelector('header');
-var form = document.getElementById('form');
+var form = document.getElementById('form-div');
 var ajaxx = document.getElementById('ajaxx');
+var buttons = document.getElementById('buttons');
 
 
 
@@ -29,8 +31,9 @@ function restructurePage() {
 		top: "40px",
 		height: "auto",
 	});
-
-
+	Object.assign(buttons.style, {
+		top: "-20px",
+	});
 	
 }
 

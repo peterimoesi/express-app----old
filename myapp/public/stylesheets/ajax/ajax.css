@@ -8,12 +8,12 @@ header {
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
 div {
 	box-sizing: border-box;
 }
 section {
 	position: relative;
-	left: 5%;
 	height: 30px;
 	top: 120px;
 }
@@ -31,7 +31,6 @@ section div {
 
 button {
 	position: relative;
-	top: 70px;
 }
 
 a {
@@ -43,5 +42,27 @@ a {
 }
 #buttons {
 	position: relative;
-	top: 30px;
+	top: 50px;
+}
+
+
+@media screen and (min-width: 720px) {
+	#form-div {
+	position: fixed;
+	top: 200px;
+	z-index: 4;
+	width: 100%;
+	}
+	header {
+	height: 200px;
+	background-color: black;
+	position: relative;
+	z-index: 4;
+	background-image: url("/images/moviesearch.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	}
+	#buttons {
+		background: black;
+	}
 }
