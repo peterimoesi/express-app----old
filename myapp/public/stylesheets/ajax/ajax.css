@@ -8,6 +8,9 @@ header {
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+div {
+	box-sizing: border-box;
+}
 section {
 	position: relative;
 	left: 5%;
@@ -35,6 +38,10 @@ a {
 	text-decoration: none;
 }
 .nomovie {
+	position: relative;
+	top: 40px;
+}
+#buttons {
 	position: relative;
 	top: 30px;
 }
