@@ -22,17 +22,18 @@ searchButton.onclick = function(){
 function restructurePage() {
 	section.innerHTML = "";
 	Object.assign(header.style, {
-		height: "70px"
+		height: "80px"
 	});
 	Object.assign(form.style, {
 		top: "-30px"
 	});
 	Object.assign(section.style, {
-		top: "40px",
+		top: "60px",
 		height: "auto",
 	});
 	Object.assign(buttons.style, {
-		top: "-20px",
+		top: "40px",
+		height: "90px"
 	});
 	
 }
