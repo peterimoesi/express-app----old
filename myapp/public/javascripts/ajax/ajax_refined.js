@@ -1,7 +1,7 @@
 var searchValue = document.getElementById('search_box');
 var title = document.getElementsByTagName('title');
 var searchButton = document.getElementById('srch');
-var section = document.querySelector('section');
+var section = document.getElementById('sect');
 var header = document.querySelector('header');
 var form = document.getElementById('form');
 var ajaxx = document.getElementById('ajaxx');
@@ -29,6 +29,8 @@ function restructurePage() {
 		top: "40px",
 		height: "auto",
 	});
+
+
 	
 }
 
@@ -47,6 +49,7 @@ url = 'http://www.omdbapi.com/?s=' + searchValue.value +'&type=movie&r=json&page
 	     
 	     if(refinedJsondata.Response == "False") {
 	     	sectDiv = document.createElement('div');
+	     	sectDiv.setAttribute('class', 'nomovie col-xs-offset-3 col-lg-4 col-lg-offset-4');
 	     	noMovie = document.createTextNode('No movie was found');
 	     	sectDiv.appendChild(noMovie);
 	     	section.innerHTML = "";

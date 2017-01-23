@@ -1,13 +1,16 @@
-header {
-	position: relative;
-	height: 200px;
+body {
+	background-color: black;
 	width: 100%;
-	background: #e8f9ed;
+}
+header {
+	height: 200px;
+	background-image: url("/images/moviesearch.png");
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 section {
 	position: relative;
 	left: 5%;
-	width: 90%;
 	height: 30px;
 	top: 120px;
 }
@@ -22,19 +25,16 @@ section div {
 	font-weight: bold;
 	position: relative;
 }
-#search_box {
-	position: relative;
-	width: 75%;
-	height: 43px;
-	left: 60%;
-}
+
 button {
 	position: relative;
 	top: 70px;
-	left: -9.5%;
-	width: 7%;
 }
 
 a {
 	text-decoration: none;
+}
+.nomovie {
+	position: relative;
+	top: 30px;
 }
