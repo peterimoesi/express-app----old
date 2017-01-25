@@ -1,6 +1,9 @@
 .brand-sticky {
 	width: 18%;
 }
+.datepicker {
+	color: black;
+}
 @media screen and (max-width: 440px) {
 	nav {
 		width: 100vw;
