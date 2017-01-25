@@ -18,6 +18,7 @@ var snake = require('./routes/snake/snake');
 var vanilla= require('./routes/vanilla');
 var profile = require('./routes/profile');
 var eventreg = require('./routes/eventreg/eventreg');
+var home = require('./routes/home');
 
 
 var app = express();
@@ -34,7 +35,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', sticky);
+app.use('/', home);
+app.use('/sticky', sticky);
 app.use('/register', register);
 app.use('/mysites', mySites);
 app.use('/ajax', ajax);
