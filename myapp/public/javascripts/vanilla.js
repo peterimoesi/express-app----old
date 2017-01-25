@@ -38,9 +38,9 @@ var ul = document.getElementById('lists'),
 		//li.appendChild("Cost: " + costNode.data);
 		//$(targetUi).append(li);
 		//targetUi.appendChild(li);
-		$(targetUi).append('<li class = "lit"><span class = "lits">Item :</span> ' + itemNode.data + ' <span class = "lits">Cost :</span> ' + costNode.data 
-			+ '<span class = "glyphicon edit-remove glyphicon-edit"></span>' + 
-			'<span id = "glyphicon-remove" class = "glyphicon edit-remove glyphicon-remove"></span>' + '</li>' 
+		$(targetUi).append('<div class = "col-xs-12 col-lg-6 col-xs-offset-1 lit"><span class = "lits ">Item :</span> ' + itemNode.data + ' <span class = "lits col-xs-offset-1">Cost :</span> ' + costNode.data 
+			+  
+			'<span id = "glyphicon-remove" class = "glyphicon edit-remove glyphicon-remove"></span>' + '</div>' 
 			 );
 			//li = document.getElementsByClassName('lit');
 

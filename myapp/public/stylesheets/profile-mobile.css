@@ -71,14 +71,11 @@
 @media screen and (max-width: 440px) {
 	body {
 		width: 100vw;
-		overflow: hidden;
+		overflow-x: hidden;
 		height: 100vh;
 	}
-	nav {
-		width: 100vw;
-	}
 
-	#about-me-bio, .nav-left, .sidebar, .navbar-left, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
+	#about-me-bio, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
 		display: none;
 	}
 	#about-me-intro {

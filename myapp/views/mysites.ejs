@@ -10,28 +10,52 @@
         <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.theme.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/mysites.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/header.css"><!--For the nav tab -->
 
     </head>
-    <body>
+    <body style="background-color: black; color: white;">
 
        <% include templates/header.ejs %>
 
-        <div class="row">
-          <p><h2>Portfolio</h2></p>
-            <ul>
-              <li><a href="/ajax" target="_blank"><h3>Movie search</h3></a>
-                  <p>Find any movie from the open movie data base using ajax callback requests. Built using raw JavaScript code</p>
-              </li>
-              <li><a href="/snake" target="_blank"><h3>Let's play a snake game</h3></a>
-                <p>A snake game built entirely with jquery and javascript. Eat the food and get points of 20. Hit the wall and fail the game</p>
-              </li>
-	           <li><a href="/vanillaApp" target="_blank"><h3>Cost calculator</h3></a>
-                <p>Records items and their cost price and returns the total at the bottom of the page. Built with jquery and javascript</p>
-              </li>
-            <li><a href="/eventreg" target="_blank"><h3>Event Registration</h3></a>
-                <p>With backend support.</p>
-            </li>
-            </ul>
+        <div class = "container-fluid">
+          
+        
+
+          <div class="container">
+            <div class = "row">
+              <p><h2>Portfolio</h2></p>
+              
+                <div class = "col-lg-4 col-md-6 col-xs-12">
+                      <a href="/ajax" target="_blank"> 
+                        <img class = img-thumbnail src="/images/portfolio/ajax.png">
+                        <h3>Movie search</h3></a>
+                      <p>Find any movie from the open movie data base using ajax callback requests. Built using raw JavaScript code</p>
+                </div>
+                <div class = "col-lg-4"></div>
+                <div class = "col-lg-4 col-md-6 col-xs-12">
+                    <a href="/snake" target="_blank">
+                      <img class = img-thumbnail src="/images/portfolio/snake.png">
+                      <h3>Let's play a snake game</h3></a>
+                    <p>A snake game built entirely with jquery and javascript. Eat the food and get points of 20. Hit the wall and fail the game</p>
+                </div>
+
+                <div class = "col-lg-4 col-md-6 col-xs-12">
+    	            <a href="/vanillaApp" target="_blank">
+                   <img class = img-thumbnail src="/images/portfolio/vanilla.png">
+                   <h3>Cost calculator</h3></a>
+                   <p>Records items and their cost price and returns the total at the bottom of the page. Built with jquery and javascript</p>
+                </div>
+                <div class = "col-lg-4"></div>
+
+                <div class = "col-lg-4 col-md-6 col-xs-12">
+                  <a href="/eventreg" target="_blank">
+                    <img class = img-thumbnail src="/images/portfolio/eventreg.png">
+                    <h3>Event Registration</h3></a>
+                    <p>With Node.js backend support.</p>
+                </div>
+            </div>
+          </div>
+
         </div>
 
 

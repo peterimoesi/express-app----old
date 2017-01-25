@@ -6,7 +6,8 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).effect( "bounce", { times : 3 }, "slow");
   
-        	setTimeout(function(){$('#my-obj').show()}, 1000);
+        	//setTimeout(function(){$('#my-obj').show()}, 1000);
+        	$('#myModal').modal();
        	 console.log("showing")    
     });
 	document.getElementById('clickOff').onclick = function() {  

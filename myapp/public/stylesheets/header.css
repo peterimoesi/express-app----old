@@ -1,0 +1,16 @@
+.brand-sticky {
+	width: 18%;
+}
+@media screen and (max-width: 440px) {
+	nav {
+		width: 100vw;
+	}
+	.nav-left, .sidebar, .navbar-left {
+		display: none;
+	}
+}
+@media screen and (max-width: 1366px) {
+	nav {
+		width: 100vw;
+	}
+}

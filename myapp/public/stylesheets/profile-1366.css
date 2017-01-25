@@ -4,9 +4,6 @@
 		height: 100%;
 		overflow-x: hidden;
 	}
-	nav {
-		width: 100vw;
-	}
 
 	#about-me-bio, .sidebar, .about-me-info h4, .about-me-info p, #ugly, #linkedin-link, #codewars, .h3-a-butt, #closeup {
 		display: none;
@@ -26,7 +23,7 @@
 	}
 
 	.about-me-info {
-		top: 32vh;
+		top: 230px;
 		color: #4d4d4d;
 		left: 38.5%;
 	}
@@ -78,15 +75,6 @@
 	border: 2px solid black;
     background-color: white; 
 }
-@-moz-document url-prefix() { 
-  #my-obj{
-    left: 30%;
-    top: 10vh;
-    
-  }
-
-}
- 
 	section {
 		width: 100vw;
 		left: 4vw;

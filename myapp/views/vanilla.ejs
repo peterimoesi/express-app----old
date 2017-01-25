@@ -3,7 +3,7 @@
     <head>
 	   <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
         <title>Vanilla App</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.css">
@@ -11,21 +11,37 @@
         <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.structure.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/mysites.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/vanilla.css">
+                <link rel="stylesheet" type="text/css" href="/stylesheets/header.css"><!--For the nav tab -->
 
     </head>
     <body>
 
        <% include templates/header.ejs %>
 
-       <section id = "myapp">
+      <div class = "container">
+        <section id = "myapp">
+          <div class = "row">
+             <div class = "col-xs-12 col-lg-2 col-lg-offset-1 col-xs-offset-1">
+                <input type = "text" class = "cost_item" id = "addItem" placeholder = "   add item...">
+            </div>
+            <div class = "col-xs-12 col-lg-2 col-xs-offset-1">
+                <input type = "text" class = "cost_item" id = "addCost" placeholder = "   add cost...">
+            </div>
 
-          <input type = "text" class = "cost_item" id = "addItem" placeholder = "   add item...">
-          <input type = "text" class = "cost_item" id = "addCost" placeholder = "   add cost...">
-          <button type="button" id = "add" class="btn btn-default">Add</button>
-          <button type="button" id = "removeAll" class="btn btn-default">Clear All</button>
-          <ul id = "lists"></ul>
-          <p id = "total"></p>
-       </section>
+            <div id = "all-buttons" class = "col-xs-12 col-xs-offset-1">
+                <button type="button" id = "add" class="btn btn-default">Add</button>
+                <button type="button" id = "removeAll" class="btn btn-default">Clear All</button>
+            </div>
+          </div>
+           <div id = "lists">
+              <div class = "row"></div>
+          </div>
+           </section>
+           <div id = "total-cover" class = "col-lg-offset-5 col-xs-offset-5"style="border: 3px solid white;">
+             <p id = "total"></p>
+           </div>
+        </div>
+
 
 
 </script>
