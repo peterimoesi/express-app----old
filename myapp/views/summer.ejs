@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Summer Car</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/summer/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Welcome</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#features" onclick=$("#menu-close").click();>Features</a>
+            </li>
+            <li>
+                <a href="#gallery" onclick=$("#menu-close").click();>Gallery</a>
+            </li>
+            <li>
+                <a href="#preorder" onclick=$("#menu-close").click();>Pre-Order</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <div id = "introduc" >
+            <h1 style="font-weight: 700; font-size: 100px;">My Summer Car</h1>
+            <img src="http://www.amistech.com/msc/kuvat/tulee.gif"></div>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about" style="background-color: #262626">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="max-height: 200px; overflow: none;">
+                    <div class = "embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://store.steampowered.com/widget/516750/" frameborder="0"></iframe></div>
+                    
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="features" class="features bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Features</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                
+                                <h4>
+                                    <strong>Simulator</strong>
+                                </h4>
+                                <p>Driving, Engine and Walking Simulator</p>
+                                <a href="#" class="btn btn-light" id = "simulator-learn-more" data-toggle="modal" data-target="#myModal-simulator">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                
+                                <h4>
+                                    <strong>Open World</strong>
+                                </h4>
+                                <p>Open world with lots of things to do</p>
+                                <br>
+                                <a href="#" class="btn btn-light" data-toggle = "modal" data-target = "#myModal-open-world">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                
+                                <h4>
+                                    <strong>Complete Fun</strong>
+                                </h4>
+                                <p>Modelled after the real world to bring more fun.</p>
+                                <a href="#" class="btn btn-light" data-toggle = "modal" data-target = "#myModal-fun">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                
+                                <h4>
+                                    <strong>Things to come</strong>
+                                </h4>
+                                <p>PLANS, BUT NOT PROMISED!</p>
+                                <br>
+                                <a href="#" class="btn btn-light" data-toggle = "modal" data-target = "#myModal-promises">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- /.all modals -->
+    <div id = "all-modals"> 
+        <div class="modal fade" id="myModal-simulator" role="dialog"> <!--Simulator-->
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Simulator</h4>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                      <li>Detailed driving simulation with Pacejka tire model</li>
+                      <li>Car operating requires H-type shifter and clutch</li>
+                      <li>Super difficult hardcore car building puzzle</li>
+                      <li>Walking simulator</li>
+                      <li>Car stereos with installable subwoofers</li>
+                      <li>Extensive damage system, for parts dropping off and wear and tear</li>
+                      <li>Parts shop for spare parts and tuning parts</li>
+                      <li>Engine simulation with changing damage and performance scenarios</li>
+                      <li>Brake fluid, oil, coolant, fuel, carburetor management</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="modal fade" id="myModal-open-world" role="dialog"> <!--Open world-->
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Simulator</h4>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                      <li>Camera to take photographs</li>
+                      <li>Wonderful Graphics</li>
+                      <li>Human waste tank truck driving</li>
+                      <li>Lots of things to do</li>
+                      <li>Drunk NPC's</li>
+                      <li>AI road traffic</li>
+                      <li>Fast and dangerous dirt roads</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal-fun" role="dialog"> <!--Open world-->
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Simulator</h4>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                      <li>Listen drunk people talk</li>
+                      <li>Passing out and waking up in random place</li>
+                      <li>Able to go to sauna, drink alcohol beverages and get wasted</li>
+                      <li>Ability to import own OGG songs to radio</li>
+                      <li>Steal fuel</li>
+                      <li>Play slot machine in bar</li>
+                      <li>Chop wood</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal-promises" role="dialog"> <!--Open world-->
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Simulator</h4>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                      <li>Window stickers, like "More beer"</li>
+                      <li>Rowing boat</li>
+                      <li>Strawberry picking</li>
+                      <li>Ability to make kilju and sell it to get some cash</li>
+                      <li>Suomi KP/-31 to shoot fishes, cans, or something else</li>
+                      <li>Drag strip and local drag racing events</li>
+                      <li>Lively environment with houses, nature and animals</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal-log" role="dialog"> <!--change log-->
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Log</h4>
+                </div>
+                <div class="modal-body" style="height: 300px; overflow-y: scroll;">
+                  MY SUMMER CAR <br><br>
+                Developed by AMISTECH GAMES
+                <br><br>
+                19.12.2016
+                -Fixed issue where some parts spawn back to store after removal and save<br>
+                -Fixed issue where steering wheel could be installed without steering column and the wheel got lost<br>
+                -Possible fix for add-on gauges shattering the windshield after windshield repair<br>
+                -Jumping now resets any crouching position back to standing position<br>
+                -Added car upgrades; racing tachometer, bucket seat, 4-point harness, roll cage and rally steering wheel<br>
+                -Rally participation now requires installed safety gear<br>
+                -You can now properly enter rally only with Satsuma car<br>
+                -Fixed wrong name in rear left fender flare<br>
+                -Added spark plug wrench for tightening spark plugs<br>
+                -Made shopping bag rigid to solve bag instability issues<br>
+                -All vehicles now die when they enter water, no permanent damage however<br>
+                -Added separate setting for sun shadows and interior light shadows<br>
+                -Fixed issue where engine simulation did not care whether pistons were bolted or not<br>
+                -Fixed infamous "death bump" of the home road<br>
+                -Changed spawn positions of some AI cars so that they don't spawn too obviously <br>
+                -Added attempt to block lake side short cut route
+                -Green menace driver has been removed, RIP :(<br>
+                -Added first version of AI car that can be driven with / raced against at the Peräjärvi center<br>
+                -Increased strength of door locks<br>
+                -Added slowly developing brake fluid leak<br>
+                -Fixed issue with some used groceries getting set as "consumed" when quitting without saving<br>
+                -Now when fuel tank is detached accidentally, random amount of fuel is lost<br>
+                -Player can now die when driving the truck
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <!-- Callout -->
+    <aside class="callout" style="height: 300px;">
+        <div class="text-vertical-center"> 
+        <h2 style="color: black">Click the button below to open log</h2>
+            <button type="button" class="btn btn-lg btn-primary" style="margin-top: 30px;" data-toggle = "modal" data-target = "#myModal-log">Open Log</button>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Gallery</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-thumbnail" src="/images/summer/01.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-thumbnail" src="/images/summer/02.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-thumbnail" src="/images/summer/06.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-thumbnail" src="/images/summer/05.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 more-items">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-thumbnail" src="/images/summer/07.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 more-items">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-thumbnail" src="/images/summer/08.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 more-items">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-thumbnail" src="/images/summer/09.jpg">
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 more-items">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-thumbnail" src="/images/summer/10.jpg">
+                                    </a>
+                                </div>
+                        </div>
+                    <!-- /.row (nested) -->
+                    </div>
+                    <button class="btn btn-dark" id = "more">View More Items</button>
+                    <button class="btn btn-dark" id = "hide-more">Hide</button>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside id = "preorder" class="call-to-action bg-primary" style="background-color: #262626">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="max-height: 250px; overflow: none;">
+                    <h3>Pre-order My Summer Car Now!</h3>
+                    <div class = "embed-responsive embed-responsive-16by9" style="margin-top: 30px">
+                    <iframe class="embed-responsive-item" src="http://store.steampowered.com/widget/516750/" frameborder="0"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+            <div class = "col-lg-6 col-xs-12 col-lg-offset-3" style="text-align:center;">
+                <h2>News</h2>
+                <p style="margin-top: 30px;">
+                    19.8.2016 Changelog is back online <br>
+                    9.8.2016 It took us 6 days to pass Steam Greenlight, a huge thanks to you all! <br>
+                    2.8.2016 Game has been submitted to Steam Greenlight! <br>
+                    18.1.2016 Game site moved to another domain <br>
+                    29.3.2015 Updated changelog, updated screenshots and video <br>
+                    3.3.2015 Added full development changelog for those who are interested, also links to Twitch and Steam group <br>
+                    12.2.2015 Official Steam-group here: <a href = "#">steamcommunity.com/groups/mysummercar </a> <br>
+                    24.11.2014 BUILD number 154 has released for testers. And we are ONLINE in the Interweb!<br>
+
+
+                    There is a modern thing called SOCIAL MULTIMEDIA, so My Summer Car went there as well!
+                </p>
+            </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Contact us at</strong>
+                    </h4>
+        
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:info@amistech.com">info@anistech.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/mysummercar/?fref=ts"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/mysummercargame"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/Petrooli"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; amistech.com 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="javascripts/summer/summer.js"></script>
+
+
+</body>
+
+</html>

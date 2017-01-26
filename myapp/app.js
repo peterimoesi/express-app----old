@@ -19,6 +19,8 @@ var vanilla= require('./routes/vanilla');
 var profile = require('./routes/profile');
 var eventreg = require('./routes/eventreg/eventreg');
 var home = require('./routes/home');
+var summer = require('./routes/summer/summer');
+var image = require('./routes/image');
 
 
 var app = express();
@@ -44,6 +46,8 @@ app.use('/snake', snake);
 app.use('/vanillaApp', vanilla);
 app.use('/profile', profile);
 app.use('/eventreg', eventreg);
+app.use('/summer', summer);
+app.use('/image', image);
 
 
 
