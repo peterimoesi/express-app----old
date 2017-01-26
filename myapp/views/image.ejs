@@ -3,13 +3,18 @@
 <html>
 <head>
 	<title>Trying</title>
-	<script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+	   <!-- Parallax Scroll -->
+	   <link rel="stylesheet" type="text/css" href="/stylesheets/image.css">
+    
 </head>
 <body>
 
-	<a-scene src="/images/BvS.jpg">
-		  
-	</a-scene>
+ <header class="parallax-window" data-parallax="scroll" data-image-src="/images/BvS.jpg"></header>
+    <div class = "second"></div>
+     <header class="parallax-window" data-parallax="scroll" data-image-src="/images/BvS.jpg"></header>
+    <div class = "second"></div>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src = "vendor/parallax/parallax.min.js"></script>
 </body>
 </html>
