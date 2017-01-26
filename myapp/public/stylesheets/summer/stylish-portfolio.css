@@ -166,6 +166,11 @@ hr.small {
     -o-background-size: cover;
 }
 
+.header h1 {
+        font-weight: 700;
+        font-size: 100px;
+    }
+
 /* About */
 
 .about {
