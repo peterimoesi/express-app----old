@@ -287,12 +287,12 @@ footer {
     background: rgba(0, 0, 0, 0.2);
 }
 /* Parallax floatig element*/
-@media screen and (min-width: 700px){
+@media screen and (min-width: 1000px){
     #promises {
-        transform: translate(100px, 20px);
+        transform: translate(1000px, 20px);
     }
 
     #simulator {
-        transform: translate(-100px, 20px);
+        transform: translate(-1000px, 20px);
     }
 }
