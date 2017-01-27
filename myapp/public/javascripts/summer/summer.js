@@ -62,9 +62,9 @@ $(window).scroll(function(){
     console.log("yes");
 
 
-    if(wScroll > $('#features').offset().top - $(window).height() && window.outerWidth > 1300){
+    if((wScroll - 300) > $('#features').offset().top - $(window).height() && window.outerWidth > 1000){
 
-        var offset = (Math.min(0, wScroll - $('#features').offset().top +$(window).height() - 500)).toFixed();
+        var offset = (Math.min(0, wScroll - $('#features').offset().top +$(window).height() - 680)).toFixed();
 
         $('#simulator').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.1) +'px)'});
 
