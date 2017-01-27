@@ -10,6 +10,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -210,6 +211,7 @@ hr.small {
 
 .gallery {
     background: #f2f2f2;
+    overflow-y: hidden;
 }
 
 .portfolio-item {
