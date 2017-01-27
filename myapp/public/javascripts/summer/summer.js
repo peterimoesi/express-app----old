@@ -59,16 +59,16 @@ $(window).scroll(function(){
 
     var wScroll = $(this).scrollTop();
 
-    console.log(wScroll, $('#features').offset().top - $(window).height())
+    console.log("yes");
 
 
     if(wScroll > $('#features').offset().top - $(window).height() && window.outerWidth > 1300){
 
-        var offset = (Math.min(0, wScroll - $('#features').offset().top +$(window).height() - 650)).toFixed();
+        var offset = (Math.min(0, wScroll - $('#features').offset().top +$(window).height() - 500)).toFixed();
 
-        $('#simulator').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
+        $('#simulator').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.1) +'px)'});
 
-        $('#promises').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
+        $('#promises').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.1) +'px)'});
 
   }
 
