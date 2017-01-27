@@ -209,8 +209,7 @@ hr.small {
 /* gallery */
 
 .gallery {
-    background: url("/images/summer/13.jpg") no-repeat left top fixed;
-    padding: 50px 0;
+    background: #f2f2f2;
 }
 
 .portfolio-item {
