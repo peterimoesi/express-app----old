@@ -223,6 +223,7 @@ a:focus {
 .content-section {
   padding-top: 30px;
 }
+
 .portfolio-section {
   width: 100%;
   padding: 50px 0;
@@ -247,6 +248,7 @@ a:focus {
     padding-top: 80px;
     padding-bottom: 30px;
   }
+
   .portfolio-section {
     padding: 100px 0;
   }
@@ -293,6 +295,12 @@ ul.banner-social-buttons {
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
+  /*profile img mobile device*/
+  .profile-img {
+    padding-bottom: 40px;
+    width: 100%; 
+  }
+
 }
 footer {
   padding: 50px 0;
