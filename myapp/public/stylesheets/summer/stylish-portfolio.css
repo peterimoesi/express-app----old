@@ -280,3 +280,17 @@ footer {
 #hide-more{
     display: none;
 }
+#features-container {
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.2);
+}
+/* Parallax floatig element*/
+@media screen and (min-width: 700px){
+    #promises {
+        transform: translate(100px, 20px);
+    }
+
+    #simulator {
+        transform: translate(-100px, 20px);
+    }
+}

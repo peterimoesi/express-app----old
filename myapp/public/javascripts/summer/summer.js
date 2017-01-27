@@ -51,15 +51,25 @@
     });
     
     
-    //show more items
-    $('#more').on('click', function(ev){
-    	$(this).hide();
-    	$('.more-items').fadeIn("slow");
-    	$('#hide-more').show("slow");
-    });
+    //parallax on the web
 
-    $('#hide-more').on('click', function(ev){
-    	$(this).hide();
-    	$('.more-items').hide();
-    	$('#more').show();
-    })
+    //floating element
+
+$(window).scroll(function(){
+
+    var wScroll = $(this).scrollTop();
+
+    console.log(wScroll, $('#features').offset().top - $(window).height())
+
+
+    if(wScroll > $('#features').offset().top - $(window).height() && window.outerWidth > 1300){
+
+        var offset = (Math.min(0, wScroll - $('#features').offset().top +$(window).height() - 650)).toFixed();
+
+        $('#simulator').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+        $('#promises').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+  }
+
+})
