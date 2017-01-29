@@ -21,6 +21,7 @@ var eventreg = require('./routes/eventreg/eventreg');
 var home = require('./routes/home');
 var summer = require('./routes/summer/summer');
 var image = require('./routes/image');
+var react = require('./routes/react');
 
 
 var app = express();
@@ -48,6 +49,7 @@ app.use('/profile', profile);
 app.use('/eventreg', eventreg);
 app.use('/summer', summer);
 app.use('/image', image);
+app.use('/react', react);
 
 
 

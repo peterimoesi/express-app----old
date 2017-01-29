@@ -357,7 +357,7 @@ body {
     display: table-cell;
     vertical-align: bottom;
     opacity: 0;/* Make text invisible*/
-    top: -70px;
+    top: -90px;
     font-weight: bolder;
     z-index: 1000;
     width: 100%;
