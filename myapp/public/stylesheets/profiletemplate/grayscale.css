@@ -395,7 +395,8 @@ body {
   -moz-transition-delay: 100ms;
   transition-delay: 100ms;
 }
+/*Adjust about me*/
+.about-peter {
+  margin-top: 80px; 
 }
-@media (max-width: 400px) {
-
 }
