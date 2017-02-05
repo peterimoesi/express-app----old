@@ -5,31 +5,28 @@
 		border-radius: 50%;
 		width: 50%;
 		max-width: none;
-		top: -3vh;
-		left: 22.5vw;
-		position: relative;
+		top: 0;
+		left: 0;
 	}
 
 	.about-me-info {
-		top: 34vh;
+		top: 0;
 		color: #4d4d4d;
-		left: -15.5%;
+		left: 0;
 	}
 	.about-me-info h5 {
 		position: relative;
-		left: -3%;
+		left: 0%;
 	}
 
 	#slider-container {
-		width: 100vw;
-		top: 8vh;
+		width: auto;
+		top: 0;
 		left: 40vw;
 		
 	}
 	#slider-container h2 {
 		color: #a6a6a6;
-	}
-	#slider-container h2 {
 		left: 5%;
 	}
 	.pics {
@@ -48,16 +45,14 @@
 	}
 	#mob-links {
 		position: relative;
-		top: 15vh;
-		left: 27%;
+		left: 10%;
 	}
 	#find-me {
 		margin-right: 15px; 
 	}
  
 	section {
-		width: 100vw;
-		left: 4vw;
+		left: 0;
 	}
 
 	article {
@@ -80,38 +75,35 @@
 	}
 	#about-me-intro {
 		position: relative;
-		left: 33vw;
+		left: 0;
 	}
 
 	#about-me-img{
 		border-radius: 50%;
-		width: 40vw;
+		max-width: 50%;
+		width: auto;
 		height: auto;
-		top: 7vh;
-		left: 25vw;
-		position: absolute;
+		left: 0;
+		position: relative;
+	}
+	section {
+		left: 0;
 	}
 
 	.about-me-info {
-		top: 20vh;
-		color: #4d4d4d;
-		left: 22.5vw;
-	}
-	.about-me-info h5 {
 		position: relative;
-		left: -7%;
+		top: 0;
+		color: #4d4d4d;
 	}
 
 	#slider-container {
-		width: 100vw;
-		top: 20vh;
+		width: auto;
+		top: 0;
 		left: 40vw;
 		
 	}
 	#slider-container h2 {
 		color: #a6a6a6;
-	}
-	#slider-container h2 {
 		left: 0%;
 	}
 	.pics {
@@ -130,20 +122,12 @@
 	}
 	#mob-links {
 		position: relative;
-		top: 29vh;
+		margin-top: 30px;
+		top: 0;
 		left: 18vw;
 	}
 	#find-me {
 		margin-right: 15px; 
-	}
- 
-	section {
-		width: 100vw;
-		left: 4vw;
-	}
-
-	article {
-		width: 95%;
 	}
 
 

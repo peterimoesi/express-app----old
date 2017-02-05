@@ -10,13 +10,20 @@
 <body>
 <style type="text/css">
 	#example {
-		padding: 10px;
-		width: 20%;
+		padding: 20px;
+		width: 40%;
 		background-color: #66ccff;
 		margin: 50px;
 	}
 	button {
 		margin: 10px;
+		width: auto;
+	}
+
+	.example {
+		background-color: white;
+		padding: 15px;
+		margin-bottom: 20px;
 	}
 
 </style>
@@ -36,9 +43,12 @@
 					},
 
 					save: function() {
-						var val = this.refs.newText.value
-						console.log(val)
+						this.props.updateCommentText(this.refs.newText.value, this.props.index);
 						this.setState({editing: false});
+					},
+
+					remove: function() {
+						this.props.removeCommentText(this.props.index)
 					},
 
 					renderForm: function() {
@@ -69,10 +79,57 @@
 						}
 						}
 
-					});
-		ReactDOM.render(<div>
-								<Bacon>My First react app</Bacon>
-						</div>, document.getElementById('example'));
+				});
+
+	var Board = React.createClass({
+			getInitialState : function(){
+					return {comment: [
+						'I am hungry',
+						'Still Hungry',
+						'fuck you all'
+					]}
+			},
+
+			addNew: function(text) {
+					var arr = this.state.comment;
+					arr.push(text);
+					this.setState({comment: arr})
+			},
+
+			removeComment: function(i) {
+				var arr = this.state.comment;
+				arr.splice(i, 1);
+				this.setState({comment: arr})
+			},
+
+			updateComment: function(newText, i){
+				var arr = this.state.comment;
+				arr[i] = newText;
+				this.setState({comment: arr})
+			},
+
+			eachComment: function(text, i){
+				return (<div>
+				<button onClick = {this.addNew.bind(null, "Default Comment")}>Add New</button>
+							<Bacon key = {i} index = {i} removeCommentText = {this.removeComment} updateCommentText = {this.updateComment}>
+							{text}
+							</Bacon>
+						</div>
+						)
+			},
+
+			render : function(){
+				return (
+					<div className = "comments">
+						{
+							this.state.comment.map(this.eachComment)
+						}
+					</div>
+				)
+			}
+	})
+
+		ReactDOM.render(<Board />, document.getElementById('example'));
 	</script>
 </body>
 </html>

@@ -364,7 +364,7 @@ body {
     z-index: 1000;
     width: 100%;
   }
-  figure:hover figcaption {
+  figure:hover figcaption, figure:hover img{
 
     opacity: 1; /* Make text visible*/
     -moz-transform: translateY(-40px);/* Drop in text*/
